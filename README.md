@@ -1,4 +1,4 @@
-# Focus Reader Extension 読 🌙
+# Focus Reader Extension 🌙
 
 A lightweight Google Chrome extension designed to eliminate distractions (like headers, sidebars, or ads) so you can focus entirely on your reading. Perfect for documentation sites, blogs, programming tutorials (e.g., W3Schools, GeeksForGeeks), and Wikipedia.
 
