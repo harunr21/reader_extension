@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <h1>Focus Reader</h1>
+        <label class="switch" title="Turn Extension On/Off">
+          <input type="checkbox" id="extension-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <p>Remove distractions, focus on content.</p>
+    </div>
+
+    <div id="main-content">
+      <div class="actions">
+        <button id="toggle-hide-mode" class="btn primary">
+          <span class="icon">👁️‍🗨️</span>
+          <span id="toggle-text">Enable Hide Mode</span>
+        </button>
+
+        <button id="restore-elements" class="btn secondary">
+          <span class="icon">🔄</span>
+          <span>Restore Hidden Elements</span>
+        </button>
+      </div>
+      <div class="theme-section">
+        <p class="section-title">Theme Options</p>
+        <div class="theme-buttons">
+          <button class="theme-btn active" data-theme="default">Default</button>
+          <button class="theme-btn" data-theme="dark">Dark Mode</button>
+        </div>
+      </div>
+
+      <div class="status-box">
+        <p id="status-message">Hide Mode is <span class="status-indicator off">OFF</span></p>
+        <p class="hint" id="status-hint">Click "Enable Hide Mode" to start hiding elements on this page.</p>
+      </div>
+    </div>
+
+    <div id="disabled-message" style="display: none; text-align: center; color: var(--text-muted); padding: 20px 0;">
+      <p>Extension is currently turned off.</p>
+      <p style="font-size: 0.8rem; margin-top: 8px;">Use the switch in the header to turn it back on.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

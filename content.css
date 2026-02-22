@@ -1,0 +1,25 @@
+/* Highlight effect for elements when hovering in hide mode */
+.focus-reader-hide-highlight {
+    outline: 2px dashed #ef4444 !important;
+    outline-offset: -2px !important;
+    background-color: rgba(239, 68, 68, 0.1) !important;
+    cursor: crosshair !important;
+    transition: outline 0.1s ease, background-color 0.1s ease !important;
+    box-shadow: inset 0 0 0 9999px rgba(239, 68, 68, 0.1) !important;
+    /* Ensure background color covers the element */
+}
+
+/* ----------- Focus Reader Themes ----------- */
+
+/* Dark Mode - uses CSS filter to quickly invert reading content */
+html.focus-reader-theme-dark {
+    filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+/* Reverse images/videos back to normal in dark mode so they don't look broken */
+html.focus-reader-theme-dark img,
+html.focus-reader-theme-dark video,
+html.focus-reader-theme-dark picture,
+html.focus-reader-theme-dark iframe {
+    filter: invert(100%) hue-rotate(180deg) !important;
+}
